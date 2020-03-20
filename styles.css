@@ -10,6 +10,7 @@ body {
   grid-template-columns: 1fr 1fr 20fr 1fr 1fr;
   grid-template-rows: 30px 1fr 1fr 130px;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -96,10 +97,12 @@ p {
   font-size: 14px;
   border: 2px solid #fdb461;
   opacity: 82%;
+  box-shadow: inset 0px 0px 0px #fff;
+  transition: all 1s;
 }
 
 .ba-cta-donate:hover {
-  background-color: #fff;
+  box-shadow: inset -151px 0px 0px #fff;
   border: 2px solid #3e2203;
 }
 
@@ -133,6 +136,8 @@ p {
   font-weight: 600;
   border-radius: 8px;
   padding: 10px 20px;
+
+  transition: all 0.5s;
 }
 
 .ba-cta-more {
@@ -145,10 +150,12 @@ p {
   padding: 10px 20px;
   border: 2px solid #3e2203;
   margin-left: 24px;
+  box-shadow: inset 0px 0px 0px #fdb461;
+  transition: all 0.5s;
 }
 
 .ba-cta-more:hover {
-  background: #fdb461;
+  box-shadow: inset -150px 0px 0px #fdb461;
   border: 2px solid #fdb461;
 }
 
@@ -220,6 +227,14 @@ p {
   line-height: 1.5rem;
   text-decoration: none;
   border-bottom: 1px solid #fdb461;
+}
+
+.ba-adopting-cta:hover {
+  border: none;
+}
+
+.ba-adopting-cta:hover span {
+  padding-left: 15px;
 }
 
 .ba-testimonial {
