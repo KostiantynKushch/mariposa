@@ -4,42 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <title>Home - Mariposa</title>
   </head>
   <body>
-    <header>
+    <header class="ba-header">
       <div class="ba-logo">
         <a href="#">Mariposa SPCA</a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Adoption</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Memberships</a></li>
-          <li><a href="#">Volunteer</a></li>
-          <li><a href="#">Success Stories</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-      <div class="ba-cta-donate">
-        <a href="#">Donate</a>
+      <div class="ba-heade-links">
+        <nav class="ba-navigation">
+          <ul class="ba-navigation-list">
+            <li><a href="#">Adoption</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Memberships</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+
+        <a class="ba-cta-donate" href="#">Donate</a>
       </div>
     </header>
-    <main>
+    <main class="ba-main-sections">
       <section class="ba-hero">
-        <h1>Keeping and Caring for Animals</h1>
-        <p>
-          Mariposa SPCA is a non-profit working to keep and care for animals and
-          enforcing laws relating to the cruelty of animals.
-        </p>
-        <p>
-          The general purpose, for which this corporation is formed, is to
-          provide an arena for local education and humane treatment to animals
-          and to foster local interest in such a society.
-        </p>
+        <h1 class="ba-hero-title">Keeping and Caring for Animals</h1>
+        <article class="ba-hero-exerpt">
+          <p>
+            Mariposa SPCA is a non-profit working to keep and care for animals
+            and enforcing laws relating to the cruelty of animals.
+          </p>
+          <p>
+            The general purpose, for which this corporation is formed, is to
+            provide an arena for local education and humane treatment to animals
+            and to foster local interest in such a society.
+          </p>
+        </article>
         <div class="ba-hero-cta">
-          <a href="#">Donate Now</a>
-          <a href="#">Learn More</a>
+          <a href="#" class="ba-cta-donate">Donate Now</a>
+          <a href="#" class="ba-cta-more">Learn More</a>
         </div>
       </section>
       <section class="ba-adopting">
@@ -47,22 +52,22 @@
           <img
             src="./img/647d740f79fc91ace0d067a4ebbf87dc-min.png"
             alt="benjamin-lambert"
-            class="ba-pic-top-left"
+            class="ba-picture ba-pic-top-left"
           />
           <img
             src="./img/c47402118ed3c9304f51e34f35bdf8cb-min.png"
             alt="stef-versoza"
-            class="ba-pic-middle-right"
+            class="ba-picture ba-pic-middle-right"
           />
           <img
             src="./img/87e64091196adb1a2b041c00942ba749-min.png"
             alt="valerie-elash"
-            class="ba-pic-bottom-left"
+            class="ba-picture ba-pic-bottom-left"
           />
         </div>
-        <article>
-          <h2>Finding a Forever Friend</h2>
-          <div class="ba-exerpt">
+        <article class="ba-featured-article">
+          <h2 class="ba-featured-title">Finding a Forever Friend</h2>
+          <div class="ba-featured-exerpt">
             <p>
               Millions of companion animals in shelters across America are just
               waiting for a special home like yours. Navigating the adoption
@@ -76,7 +81,9 @@
               your lifestyle, and more.
             </p>
           </div>
-          <div class="ba-cta-adopting"><a href="#">Start adopting</a></div>
+          <a href="#" class="ba-adopting-cta"
+            >Start adopting <span>&#x279C;</span></a
+          >
         </article>
         <div class="ba-testimonial">
           <img
@@ -84,17 +91,17 @@
             alt="first-testimony"
             class="ba-profile-picture"
           />
-          <blockquote>
+          <blockquote class="ba-blockquote">
             “The Mariposa Team was invaluable to my adoption process, providing
             all the necesary matierals to ensure a smooth and safe process.”
           </blockquote>
-          <address>
+          <address class="ba-author">
             Fido, Pedigree Pug
           </address>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="ba-footer">
       <p>Not Actually Copyrighted © <time datetime="2018"> 2018</time></p>
     </footer>
   </body>
