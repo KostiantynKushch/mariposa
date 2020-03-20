@@ -155,8 +155,9 @@ p {
 .ba-adopting {
   display: grid;
   grid-template-columns: 7fr 1fr 10fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   padding-left: 50px;
+  margin-bottom: 120px;
 }
 
 .ba-adopting h2,
@@ -191,7 +192,7 @@ p {
 }
 .ba-pic-middle-right {
   position: absolute;
-  right: 50px;
+  left: 170px;
   top: 120px;
   z-index: 2;
 }
@@ -223,22 +224,36 @@ p {
 
 .ba-testimonial {
   grid-column: 3 / 4;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ba-profile-picture {
+  max-height: 64px;
+  max-width: 64px;
 }
 
 .ba-blockquote {
   max-width: 480px;
   margin: 0;
   padding-left: 24px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-style: italic;
 }
 
 .ba-author {
-  grid-column: 2/3;
+  padding-left: 88px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 60%;
 }
 
 .ba-footer {
   grid-row: 4 / 5;
   grid-column: 3 / 4;
+  padding-left: 50px;
+  font-size: 16px;
+  opacity: 60%;
 }
